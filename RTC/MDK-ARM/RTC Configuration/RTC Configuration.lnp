@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"rtc configuration\system_stm32f1xx.o"
+"rtc configuration\stm32f1xx_hal_rcc.o"
+"rtc configuration\stm32f1xx_hal_gpio.o"
+"rtc configuration\stm32f1xx_hal_flash.o"
+"rtc configuration\stm32f1xx_hal_cortex.o"
+"rtc configuration\stm32f1xx_hal_rtc_ex.o"
+"rtc configuration\stm32f1xx_hal_flash_ex.o"
+"rtc configuration\stm32f1xx_hal_pwr.o"
+"rtc configuration\stm32f1xx_hal_rtc.o"
+"rtc configuration\stm32f1xx_hal_rcc_ex.o"
+"rtc configuration\stm32f1xx_hal_dma.o"
+"rtc configuration\stm32f1xx_hal_gpio_ex.o"
+"rtc configuration\stm32f1xx_hal.o"
+"rtc configuration\startup_stm32f103xe.o"
+"rtc configuration\stm32f1xx_hal_msp.o"
+"rtc configuration\stm32f1xx_it.o"
+"rtc configuration\main.o"
+--library_type=microlib --strict --scatter "RTC Configuration\RTC Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC Configuration.map" -o "RTC Configuration\RTC Configuration.axf"
